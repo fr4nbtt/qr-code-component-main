@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Outfit, sans-serif;
+  font-size: 15px;
+  background: var(--slate-300);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card-container {
+  margin: 5rem auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1.2rem;
+  background: var(--white);
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-container img {
+  border-radius: 10px;
+}
+
+.card-container h2 {
+  font-size: 1.3rem;
+  color: var(--slate-900);
+}
+
+.card-container p {
+  line-height: 1.5;
+  margin-bottom: 1.6rem;
+  color: var(--slate-500);
+}
+
+@media (max-width: 500px) {
+  .card-container {
+    width: 88vw;
+  }
+
+  .card-container p,
+  .card-container h2 {
+    max-width: 90%;
+  }
+}
